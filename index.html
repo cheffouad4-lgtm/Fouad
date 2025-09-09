@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chef Fouad – Arabisch-italienischer Koch & Content Creator</title>
+<meta name="description" content="Chef Fouad – Arabisch-italienischer Koch und Content Creator. Entdecke Rezepte, Food-Fotografie und kulinarische Abenteuer weltweit.">
+<meta name="keywords" content="Chef Fouad, Koch, Rezepte, Food Blogger, Food Fotografie, Arabisch Italienische Küche">
+<meta name="robots" content="index, follow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background:#1e1e2f;
+    color:#1e1e2f;
+}
+
+/* Navbar محسّن */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+    padding: 0 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: background 0.3s;
+}
+
+nav.scrolled { background: rgba(0,0,0,0.8); }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border-radius: 10px;
+    transition: 0.3s, background 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background: rgba(255, 76, 59, 0.3);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 500px) {
+    nav a {
+        margin: 5px 8px;
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    padding: 100px 20px 60px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    scroll-margin-top: 70px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#home { background: linear-gradient(135deg, #008C45, #FFFFFF, #CD212A); color:#1e1e2f; }
+#about { background: linear-gradient(135deg, #00A65A, #F0F0F0, #D13A2C); color:#1e1e2f; }
+#skills { background: linear-gradient(135deg, #00B06B, #FFFFFF, #C12B23); color:#1e1e2f; }
+#services { background: linear-gradient(135deg, #00C078, #FFFFFF, #BD1F1F); color:#1e1e2f; }
+#contact { background: linear-gradient(135deg, #008C45, #FFFFFF, #CD212A); color:#1e1e2f; }
+
+.logo img { width:120px; height:120px; object-fit:contain; border-radius:50%; margin-bottom:20px; border:3px solid #ff4c3b; }
+
+h1, h2 { margin-bottom:15px; }
+
+.bio, .services-content, .skills-content { max-width:700px; margin:20px auto; line-height:1.6; font-size:1.1rem; }
+
+.services-content { max-width:700px; margin:auto; }
+.service {
+    background: rgba(255, 76, 59, 0.15);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.3); }
+
+.large-image { width: 100%; max-height: 600px; object-fit: cover; margin-top: 20px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+
+.social-links { display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:30px; }
+.social-links a {
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    text-decoration:none; padding:20px 30px; border-radius:50px;
+    font-weight:700; font-size:1.2rem; color:#fff;
+    box-shadow:0 6px 20px rgba(0,0,0,0.4); transition:0.3s;
+}
+.social-links a.youtube { background:#FF0000; }
+.social-links a.tiktok { background:#010101; }
+.social-links a.instagram { background:#C13584; }
+.social-links a.facebook { background:#1877f2; }
+.social-links a.gmail { background:#D44638; }
+.social-links a:hover { transform:scale(1.1); box-shadow:0 8px 25px rgba(0,0,0,0.5); }
+
+#google_translate_element { margin-bottom:30px; }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="#home">Startseite</a>
+    <a href="#about">Über Chef Fouad</a>
+    <a href="#skills">Fähigkeiten</a>
+    <a href="#services">Dienstleistungen</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<!-- Sections -->
+<section id="home">
+    <div class="logo"><img src="Chef.jpeg" alt="Chef Fouad Logo – Arabisch-italienischer Koch"></div>
+    <h1>Willkommen auf der offiziellen Webseite von Chef Fouad</h1>
+    <p>Ich bin Chef Fouad – leidenschaftlicher Koch und Content Creator.</p>
+    <p>Hier teile ich kulinarische Erlebnisse, Restaurantbewertungen und Food-Abenteuer aus aller Welt.</p>
+    <p>Folgt mir auf meinen Kanälen und begleitet mich auf meiner kulinarischen Reise!</p>
+    <img src="Chf.jpg" alt="Chef Fouad beim Kochen – Food Fotografie" class="large-image">
+</section>
+
+<section id="about">
+    <h2>Über Chef Fouad</h2>
+    <div class="bio">
+        Ich bin Chef Fouad, ein arabisch-italienischer Koch und Content Creator.<br>
+        Auf meinen Kanälen präsentiere ich kulinarische Erlebnisse, Restaurantbewertungen und Food-Abenteuer aus aller Welt.<br>
+        Folge mir und begleite mich auf meiner kulinarischen Reise.
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Fähigkeiten</h2>
+    <div class="skills-content">
+        <h3>Kochkünste</h3>
+        <ul>
+            <li>Italienische Küche: Pizza, Pasta, traditionelle & moderne Rezepte</li>
+            <li>Kombination arabischer und italienischer Geschmacksrichtungen</li>
+            <li>Professionelle Restaurant- und Food-Bewertungen</li>
+            <li>Kreatives Anrichten & Präsentieren</li>
+            <li>Erfahrung mit frischen Zutaten</li>
+            <li>Organisation & effiziente Arbeitsweise</li>
+        </ul>
+        <h3>Content-Creation</h3>
+        <ul>
+            <li>Produktion & Bearbeitung von Videos (YouTube, TikTok, Instagram)</li>
+            <li>Professionelle Food-Fotografie & Videografie</li>
+            <li>Mehrsprachige Kommunikation: Arabisch, Deutsch, Englisch</li>
+        </ul>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Meine Dienstleistungen</h2>
+    <div class="services-content">
+        <div class="service">
+            <h3>Kulinarische Rezepte</h3>
+            <p>Authentische arabische & italienische Rezepte - kreativ präsentiert und leicht nachzukochen.</p>
+        </div>
+        <div class="service">
+            <h3>Professionelle Food-Fotografie</h3>
+            <p>Hochwertige Aufnahmen von Gerichten, Restaurants & Food-Produkten für Social Media & Marketing.</p>
+        </div>
+        <div class="service">
+            <h3>Werbung & Videoproduktion</h3>
+            <p>Kreative Content-Erstellung & Werbevideos für Restaurants, Cafés & Lebensmittelmarken.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <div id="google_translate_element"></div>
+    <div class="social-links">
+        <a href="https://www.youtube.com/@chef.fouad0" class="youtube" target="_blank">YouTube</a>
+        <a href="https://www.tiktok.com/@chef.fouad0?_t=ZN-8zYcZ4TIZOc&_r=1" class="tiktok" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/chef.fouad0?igsh=MXNybHFnNXQwMmR4eA==" class="instagram" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/16oZuBGtNz/" class="facebook" target="_blank">Facebook</a>
+        <a href="mailto:cheffouad4@gmail.com" class="gmail" target="_blank">E-Mail</a>
+    </div>
+</section>
+
+<script>
+// Google Translate
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+}
+
+// Navbar active & scroll effect
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 70;
+        if (pageYOffset >= sectionTop) current = section.getAttribute("id");
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) link.classList.add("active");
+    });
+
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 50) nav.classList.add("scrolled");
+    else nav.classList.remove("scrolled");
+
+    // Scroll animations
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight - 100) {
+            section.classList.add("visible");
+        }
+    });
+});
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
